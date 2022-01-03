@@ -1,0 +1,308 @@
+/*CSS GENERAL*/
+*{
+
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*CSS DEL BODY*/
+body{
+
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+/*CABECERA*/
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #5C82F2;
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid darkblue;
+}
+
+.header h1{
+
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+/*CSS DEL NAVEGADOR*/
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+
+    padding: 10px;
+    width: 240px;
+    height: 200px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+
+    display: flex;
+    margin-right: 40px;
+    list-style: none;    
+    flex-wrap: wrap;
+}
+
+.nav-menu-item{
+
+    font-size: 18px;
+    margin: 0px 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover{
+
+    background-color: #034574;
+    transition: 0.5s;
+}
+
+.nav .busca{
+
+    padding: 8px 10px;
+    margin-right: 16px;
+    background: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+/*CSS DEL CUERPO*/
+#contenido{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna h1{
+
+    color: white;
+}
+
+.columna{
+
+    color: white;
+    margin: 10px 10px 10px 0px;
+    border: 1px solid darkblue;
+    background-color: #5C82F2;
+    padding: 10px 10px 10px 10px;
+    height: 700px;
+}
+
+.columna div a{
+
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+    width: 1400px;
+    height: 700px;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid darkblue;
+    position: relative;
+}
+  
+.slideshow-container img{
+
+    height: 700px;
+    width: 100%;
+}
+
+/* Fading animation */
+.fade {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.calendario{
+
+    margin: 10px 0px 10px 10px;
+    height: 700px;
+    background-color: #D93232;;
+}
+
+.calendario h1{
+
+    text-align: center;
+    color: white;
+}
+
+.calendario iframe{
+
+    height: 600px;
+    width: 100%;
+}
+
+
+/*CSS DEL MENSAJE DE BIENVENIDA*/
+.bienvenida{
+
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+}
+
+.bienvenida h2{
+
+    text-align: center;
+}
+
+.bienvenida p{
+
+    text-align: justify;
+    font-size: 20px;
+    padding: 0px 10px 0 px 10px;
+}
+
+
+
+/*CSS DE LA SECCION DE NOTICIAS*/
+.noticias{
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#noticia1, #noticia2, #noticia3, .noticia p, .noticia a{
+
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.noticias img{
+
+    height: 300px;
+    width: 400px;
+}
+
+/*CSS DE LA OFERTA ESCOLAR*/
+h1{
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.oferta{
+
+    display: flex;
+    background-color: #893A84;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.oferta, #oferta1, #oferta2, #oferta3{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oferta img{
+
+    width: 150px;
+    height: 150px;
+}
+
+
+/*CSS DEL PIE DE PAGINA*/
+.contacto{
+
+    display: flex;
+    background-color: #354B8C;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+}
+
+.contacto, #contactenos{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.contacto, #localicenos{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;    
+}
+
+#social{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#social img{
+
+    height: 50px;
+    width: 50px;
+}

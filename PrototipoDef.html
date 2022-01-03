@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IES Mar de Cádiz</title>
+
+        <link rel="stylesheet" href="./estiloPrototipo.css">
+        <link rel="icon" type="image/png" href="./imagenes/descarga.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body> 
+
+        <!--BARRA DE NAVEGACION INICIAL-->
+        <header class="header">
+
+            <img src="./imagenes/descarga.png">
+
+            <h1>IES MAR DE CÁDIZ<br><br>BIENVENIDOS A NUESTRA WEB</h1>
+
+            <nav class="nav">
+
+                <ul class="nav-menu">
+
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link" onclick="salir()">Inicio</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link" onclick="salir()">Noticias</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link" onclick="salir()">Covid-19</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link" onclick="salir()">Contacto</a>
+                    </li>
+                </ul>
+
+                <form>
+                    <input type="text" placeholder="Buscar.." name="search" class="busca">
+                </form>
+            </nav>
+        </header>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <div id="contenido">
+
+            <aside>
+
+                <!--INICIO-->
+                <div class="columna">
+
+                    <h1><strong>INICIO</strong></h1>
+                    <br>
+                    <div><a href="http://www.ies-mardecadiz.com/index.html?amp=s" onclick="salir()"> A.M.P.A.</a></div>
+                    <br>
+                    <div> <a href="http://iesmardecadiz.esy.es/biblioteca/index.html" onclick="salir()">Biblioteca</a></div>
+                    <br>
+                    <div><a href="http://www.ies-mardecadiz.com/portalempleo/index.php" onclick="salir()">Portal de empleo</a></div>
+                    <br>
+                    <div><a href="https://educacionadistancia.juntadeandalucia.es/centros/login/" onclick="salir()">Acceso a Moodle</a></div>
+                    <br>
+                    <div><a href="visitas">Visita virtual</a></div>
+                    <br>
+                    <div><a href="horarios" onclick="salir()">Horarios varios</a></div>
+                    <br>
+                    <div><a href="departamentos" onclick="salir()">Departamentos</a></div>
+                </div>
+            </aside>
+
+            <!--GALERIA DE IMAGENES-->
+            <section class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="./imagenes/mar-cadiz.jpg">
+                </div>
+                  
+                <div class="mySlides fade">
+                    <img src="./imagenes/DyjkOyNX4AY0vk2.jpg">
+                </div>
+                  
+                <div class="mySlides fade">
+                    <img src="./imagenes/unnamed.jpg">
+                </div>
+            </section>  
+            
+            <!--CALENDARIO-->
+            <aside class="calendario">
+
+                <h1>Eventos</h1>
+
+                <br>
+
+                <iframe src="https://calendar.google.com/calendar/embed?src=pberbol022%40g.educaand.es&ctz=Europe%2FMadrid"></iframe> 
+            </aside>
+        </div>
+
+        <!--BIENVENIDA-->
+        <article class="bienvenida">
+            <h2>Mensaje de bienvenida del centro</h2>
+
+            <br>
+
+            <p>Me complace daros la bienvenida a la web oficial del IES Mar de Cádiz, en el Puerto
+            de Santa María, en nuestra querida bahía de Cádiz. Agradezco mucho, en nombre de toda
+            la comunidad educativa del instituto, vuestro interés en visitarnos. Queremos que esta
+            página sea una gran puerta de intercambio de información y, al mismo tiempo, un instrumento
+            de comunicación en el sentido de puesta en común de ideas, como proyectos, iniciativas
+            y, en definitiva, todo lo que enriquezca la labor educativa del centro.
+            </p>
+        </article>
+
+        <!--NOTICIAS-->
+        <section class="noticias">
+
+            <article id="noticia1"><br>NOTICIA 1<br><br>
+                <img src="./imagenes/noticia.png"><br><br>
+                <p>lorem ipsum dolor sit amet</p><br><br>
+                <a href="noticias" onclick="salir()">Click aquí para ir a noticias</a>
+            </article>
+
+            <article id="noticia2"><br>NOTICIA 2<br><br>
+                <img src="./imagenes/noticia.png"><br><br>
+                <p>lorem ipsum dolor sit amet</p><br><br>
+                <a href="noticias" onclick="salir()">Click aquí para ir a noticias</a>
+            </article>
+
+            <article id="noticia3"><br>NOTICIA 3<br><br>
+                <img src="./imagenes/noticia.png"><br><br>
+                <p>lorem ipsum dolor sit amet</p><br><br>
+                <a href="noticias" onclick="salir()">Click aquí para ir a noticias</a>
+            </article>
+        </section>
+
+
+        <h1>Ofertas del centro</h1>
+
+        <!--OFERTAS-->
+        <section class="oferta">
+
+            <div id="oferta1"><br>ESO<br><br>
+                <img src="./imagenes/images.jpg"><br><br>
+                <ul>
+                    <li>Primer ciclo</li>
+                    <li>Segundo ciclo</li>
+                </ul>
+                <br><br>
+                <a href="centro" onclick="salir()">Ir a ofertas</a>
+            </div>
+
+            <div id="oferta1"><br>Bachillerato<br><br>
+                <img src="./imagenes/bachiller.jpg"><br><br>
+                <ul>
+                    <li>Ciencias biológicas</li>
+                    <li>Ciencias tecnológicas</li>
+                    <li>Sociales y humanidades</li>
+                </ul>
+                <br><br>
+                <a href="centro" onclick="salir()">Ir a ofertas</a>
+            </div>
+
+            <div id="oferta1"><br>Ciclos formativos<br><br>
+                <img src="./imagenes/Ciclos_Formativos-2.jpg"><br><br>
+                <ul>
+                    <li>Primer ciclo</li>
+                    <li>Segundo ciclo</li>
+                </ul>
+                <br><br>
+                <a href="centro" onclick="salir()">Ir a ofertas</a>
+            </div>
+
+            <div id="oferta1"><br>Cursos de especialización<br><br>
+                <img src="./imagenes/Cursos_Especializacion_FP-1024x536.jpg"><br><br>
+                <ul>
+                    <li>Primer año</li>
+                    <li>Segundo año</li>
+                </ul>
+                <br><br>
+                <a href="centro" onclick="salir()">Ir a ofertas</a>
+            </div>
+        </section>
+
+
+        <!--PIE DE PAGINA-->
+        <h1>SOBRE NOSOTROS</h1>
+       
+        <footer class="contacto">
+
+            <div id="contactenos">
+                <br>
+                <u><strong>CONTÁCTENOS</strong></u>
+                <br><br>
+                <i class="material-icons">business_center</i> &nbsp; IES Mar de Cádiz
+                <br><br>
+                <i class="material-icons">add_location</i> &nbsp; C. Poeta Rafael Alberti 8, 11500
+                <br>
+                &nbsp; El Puerto de Santa María, Cádiz.
+                <br><br>
+                <i class="material-icons">call</i> &nbsp; Teléfono: 956 24 31 28
+                <br><br>
+                <i class="material-icons">contact_mail</i> &nbsp; <e-mail>11004428.secretaria.edu@juntadeandalucia.es</e-mail>
+                <br><br>
+                <i class="material-icons">perm_contact_calendar</i> &nbsp; Horario: Lunes a viernes, de 8:30 a 15:00h.
+            </div>
+
+            <div id="localizacion">
+                <br>
+                <u><strong>LOCALÍCENOS</strong></u>
+                <br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.3890702924796!2d-6.242338284431129!3d36.59293748703808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dd021173d3f65%3A0x2d90da52b414124b!2sIES%20Mar%20de%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1637089148839!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div id="social">
+
+                <br>
+                <u><strong>REDES SOCIALES</strong></u>
+                <br><br>
+
+                <a href="https://www.facebook.com/IES-Mar-de-C%C3%A1diz-173224952723147/" onclick="salir()"><img src="./imagenes/facebook.png"></a>
+                <a href="https://twitter.com/IESMardeCadiz" onclick="salir()"><img src="./imagenes/twitter.png"></a>
+                <a href="https://www.linkedin.com/in/ies-mar-de-c%C3%A1diz-en-linkdin-0456921ba/" onclick="salir()"><img src="./imagenes/linkedin.png"></a>
+
+                <br><br><br><br><br><br><br>
+
+                <img src="./imagenes/imagen.png" style="height: 150px; width: 400px;">
+            </div>
+        </footer>
+
+
+        <!--SCRIPT-->
+        <script src="./Protitipo.js"></script>
+    </body>
+</html>
